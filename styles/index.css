@@ -1,0 +1,74 @@
+body {
+    background-color:#e7e7e7;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.cont_profile {
+    width:1024px;
+    padding:20px;
+    margin:auto;;
+}
+.cont_profile td.separator {
+    border-bottom:5px double #b5b5b5;
+}
+.cont_profile td {
+    line-height:1.5em;
+}
+.cont_profile td h3 {
+    margin:0.8em 0 0.3em 0;
+    padding:0;
+}
+.cont_profile td.tl {
+    text-align:left;
+}
+.cont_profile td.tr {
+    text-align:right;
+}
+/** Table Cell Height **/
+table.cont_profile td.h25 {
+    height:25px;
+}
+
+.cont_profile ul {
+    list-style: none;
+    font-size:1.1em;
+    margin:0;
+    padding:0;
+}
+
+.cont_profile ul li {
+    margin-bottom:5px;
+}
+.cont_profile ul li i {
+    font-size:1.2em;
+    width:35px;
+    text-align: center;
+    color: #8a8a8a;
+}
+.cont_profile ul li span, a {
+    font-size:0.8em;
+    color:black;
+}
+.cont_profile ul li a {
+    text-decoration:underline;
+}
+.cont_profile ul i { padding: 0px 5px 0px 0px;}
+.cont_profile h1 {
+    margin:0 0 0.8em 0;
+    padding:0;
+}
+
+.profile {
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    border:2px #d7d7d7 solid;
+}
+
+/** Verticla Align **/
+.vat { vertical-align: top; }
+.vab { vertical-align: bottom;}
+
+/** Text Align **/
+.tac { text-align:center; }
+
