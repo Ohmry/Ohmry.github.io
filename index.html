@@ -15,48 +15,167 @@
         <script type="module" src="./scripts/app.js"></script>
     </head>
     <body>
-        <table class="cont_profile">
-            <colgroup>
-                <col style="width:250px;">
-                <col style="width:774px;">
-            </colgroup>
-            <tr>
-                <td class="tac" rowspan="2">
-                    <img class="profile" src="./images/profile.jpeg">
-                </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
+        <div class="container">
+            <section class="profile tac">
+                <img src='./images/profile.jpeg'>
+                <h2>이병훈</h2>
+                <h4>Lee ByungHoon</h4>
+                <canvas class="ly_separator" id="ly_separator"></canvas>
+                <ul>
+                    <li>
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:o.ohmry@gmail.com">o.ohmry@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/Ohmry">github.com/Ohmry</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-birthday-cake"></i>
+                        <span>1990 ~ Now.</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Seoul, South Korea.</span>
+                    </li>
+                </ul>
+                <section class="skills tal">
+                    <h3>보유기술</h3>
+                    <article>
+                        <div class="skill_title">Java</div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star fill"></div>
+                    </article>
+                    <article>
+                        <div class="skill_title">SQL</div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star half"></div>
+                    </article>
+                    <article>
+                        <div class="skill_title">JavaScript</div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star"></div>
+                    </article>
+                    <article>
+                        <div class="skill_title">C#</div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star"></div>
+                        <div class="skill_star"></div>
+                    </article>
+                    <article>
+                        <div class="skill_title">Visual Basic</div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star fill"></div>
+                        <div class="skill_star half"></div>
+                        <div class="skill_star"></div>
+                        <div class="skill_star"></div>
+                    </article>
+                </section>
+                <section class="experience tar">
                     <ul>
-                        <li class="mb20">
-                            <h1>이병훈 (Lee ByungHoon)</h1>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope"></i>
-                            <a href="mailto:o.ohmry@gmail.com">o.ohmry@gmail.com</a>
-                        </li>
-                        <li>
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/Ohmry">github.com/Ohmry</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-birthday-cake"></i>
-                            <span>1990 ~ Now.</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Seoul, South Korea.</span>
-                        </li>
+                        
                     </ul>
-                </td>
-            </tr>
-            <tr>
-                <td class="separator" colspan="2"></td>
-            </tr>
-        </table>
-        <table class="cont_skill">
-            
-        </table>
+                </section>
+            </section>
+            <section class="contents">
+                <table>
+                    <colgroup>
+                        <col style="width:200px">
+                        <col>
+                    </colgroup>
+                    <tr>
+                        <td colspan="2">
+                            <h2>주요내용</h2>
+                            <ul>
+                                <li>Spring-Boot 기반의 자바 웹어플리케이션 개발 경험</li>
+                                <li>메가박스에서 약 5년간 시스템 운영 및 개발직무 수행</li>
+                                <li>메가박스 차세대 프로젝트를 주요 인원으로서 수행 (2018.03 ~ 2020.02)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h2>경력</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="vat">
+                            <h4>2018.02 ~ 현재</h4>    
+                        </td>
+                        <td>
+                            <h3>Spring-Boot 웹서비스 개발 및 운영</h3>
+                            <h4>조인스중앙 / 대리(팀원)</h4>
+                            <p>담당업무</p>
+                            <ul>
+                                <li>메가박스 매점상품관리시스템 개발 및 운영</li>
+                                <li>메가박스 차세대 프로젝트 수행</li>
+                                <li>메가박스 쿠폰, 제휴, 포인트관리시스템 개발 및 운영</li>
+                            </ul>
+                            <p>사용기술</p>
+                            <ul>
+                                <li>Java, Spring-Boot, Oracle, WebSquare5</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="vat">
+                            <h4>2017.02 ~ 2018.01</h4>
+                        </td>
+                        <td>
+                            <h3>매점상품관리(VB), 판매시스템(C#Winform) 개발 및 운영</h3>
+                            <h4>조인스중앙 / 사원(팀원)</h4>
+                            <p>담당업무</p>
+                            <ul>
+                                <li>메가박스 매점판매, 관리시스템 개발 및 운영</li>
+                                <li>메가박스 외부예매처 API 연동서비스 운영</li>
+                                <li>메가박스 상영스케줄안내시스템 운영</li>
+                            </ul>
+                            <p>사용기술</p>
+                            <ul>
+                                <li>C#Winform, Visual Basic, MS-SQL, ASP.Net</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="vat">
+                            <h4>2016.02 ~ 2017.01</h4>
+                        </td>
+                        <td>
+                            <h3>매점상품관리, 고객정보관리시스템 개발 및 운영</h3>
+                            <h4>메가박스중앙 / 사원(팀원)</h4>
+                            <p>담당업무</p>
+                            <ul>
+                                <li>메가박스 매점상품관리, 고객정보관리시스템 개발 및 운영</li>
+                                <li>메가박스 고객관련 API 연동서비스 운영</li>
+                            </ul>
+                            <p>사용기술</p>
+                            <ul>
+                                <li>Visual Basic, MS-SQL, ASP.Net</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h2>자격증 / 수상이력</h2>
+                            <ul>
+                                <li>정보처리기사 (산업인력공단, 2016.11.18)</li>
+                                <li>제 6회 성공회대학교 IT경진대회 동상 (성공회대학교 / 2015.10.26)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
     </body>
 </html>

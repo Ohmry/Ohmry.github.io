@@ -1,0 +1,26 @@
+body {
+    background-color:#e7e7e7;
+    font-family: 'Noto Sans KR', sans-serif;
+    height:100%;
+}
+
+.container {
+    max-width: 720px;
+    margin: auto;
+    text-align: center;
+}
+
+.profile { 
+    width: 100%;
+    padding: 20px 0 0 0;
+}
+.profile > img { 
+    width: 140px; 
+    height: 140px; 
+    border-radius:50%; 
+    border:1px solid #b5b5b5; 
+}
+.profile > article {
+    max-width : 580px;
+    float:left;
+}

@@ -1,74 +1,66 @@
 body {
     background-color:#e7e7e7;
     font-family: 'Noto Sans KR', sans-serif;
+    height:100%;
 }
 
-.cont_profile {
-    width:1024px;
-    padding:20px;
-    margin:auto;;
-}
-.cont_profile td.separator {
-    border-bottom:5px double #b5b5b5;
-}
-.cont_profile td {
-    line-height:1.5em;
-}
-.cont_profile td h3 {
-    margin:0.8em 0 0.3em 0;
-    padding:0;
-}
-.cont_profile td.tl {
-    text-align:left;
-}
-.cont_profile td.tr {
-    text-align:right;
-}
-/** Table Cell Height **/
-table.cont_profile td.h25 {
-    height:25px;
-}
-
-.cont_profile ul {
-    list-style: none;
-    font-size:1.1em;
-    margin:0;
-    padding:0;
-}
-
-.cont_profile ul li {
-    margin-bottom:5px;
-}
-.cont_profile ul li i {
-    font-size:1.2em;
-    width:35px;
-    text-align: center;
-    color: #8a8a8a;
-}
-.cont_profile ul li span, a {
-    font-size:0.8em;
-    color:black;
-}
-.cont_profile ul li a {
-    text-decoration:underline;
-}
-.cont_profile ul i { padding: 0px 5px 0px 0px;}
-.cont_profile h1 {
-    margin:0 0 0.8em 0;
-    padding:0;
+.container {
+    width: 1024px;
+    margin: auto;
 }
 
 .profile {
+    position:fixed;
+    top:0px;
+    width:230px;
+    bottom:0px;
+    padding:10px;
+}
+
+.profile > img {
     width:200px;
     height:200px;
     border-radius:50%;
-    border:2px #d7d7d7 solid;
+    border:1px solid #b5b5b5;
+}
+.profile > h2 { margin:0; padding:0; padding: 20px 0 5px 0; }
+.profile > h4 { margin:0; padding:0; }
+
+.ly_separator {
+    position:fixed;
+    top:0px;
+    margin: 0 0 0 125px;
 }
 
-/** Verticla Align **/
+.profile > ul { 
+    list-style : none; 
+    margin : 0; 
+    padding : 15px 0 0 20px;
+    text-align : left;
+}
+.profile > ul > li { text-decoration : none; margin: 12px 0 0 0; font-size : 14px; }
+.profile > ul > li > a { text-decoration : none; color : black;}
+.profile > ul > li > a:hover { text-decoration : underline; }
+.profile > ul > li > i { font-size : 20px; padding : 0 5px 0 0; color: #353d37; }
+
+.skills, .experience { margin: 40px 0 0 0; padding : 0 0 0 10px; }
+.skills > article { line-height : 20px; margin : 0 0 10px 0; }
+.skill_title, .skill_star { display : inline-block; }
+.skill_title { height:20px; vertical-align: middle; line-height:5px; padding: 0 10px 0 0; min-width : 100px;}
+.skill_star { width:15px; height:15px; border:1px solid black; }
+.skill_star.fill { background-color : black; }
+.skill_star.half { background: linear-gradient(90deg, black 50%, #e7e7e7 50%); }
+
+.experience > ul { list-style : none; }
+
+.contents {
+    padding: 10px 10px 0 280px;
+}
+.contents > table > tbody > tr > td > h2 { margin:0; padding:20px 0 0 0; }
+.contents > table > tbody > tr > td > ul > li { margin : 10px 0px 0px 0px; }
+
+/** TextAlign */
+.tac { text-align: center; }
+.tar { text-align: right; }
+.tal { text-align: left; }
 .vat { vertical-align: top; }
-.vab { vertical-align: bottom;}
-
-/** Text Align **/
-.tac { text-align:center; }
-

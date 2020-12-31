@@ -1,34 +1,26 @@
 class App {
     constructor() {
-        this.skillStats = document.getElementById("skillStats");
+        this.canvas = document.getElementById('ly_separator');
+        this.context = this.canvas.getContext('2d');
+
+        window.addEventListener('resize', this.reisze.bind(this), false);
+        this.reisze();
+    }
+
+    reisze() {
+        this.canvas.height = this.canvas.parentElement.offsetHeight;
+        this.canvas.width = 10;
         
-        this.drawSkillStats(this.skillStats);
-    }
+        this.context.beginPath();
+        this.context.moveTo(10, 20);
+        this.context.lineTo(10, this.canvas.height - 20);
+        this.context.lineCap = 'round';
+        this.context.setLineDash([10, 10]);
+        this.context.lineWidth = 2;
+        this.context.stroke();
 
-    drawSkillStats(cvs) {
-        this.ctx = cvs.getContext('2d');
-        cvs = new Chart(this.ctx, {
-            type : 'radar',
-            data : {
-                labels : ['Java', 'JavaScript', 'SQL', 'C#', 'VB'],
-                datasets : [{
-                    label : 'Skills',
-                    data : [8, 5, 8, 7, 5],
-                    backgroundColor : 'rgba(157, 194, 161, 0.7)'
-                }]
-            },
-            options : {
-                scale : {
-                    ticks : {
-                        suggestedMin : 1,
-                        suggestedMax : 10,
-                        showLabelBackdrop : false
-                    }
-                }
-            }
-        });
+        console.log(this.context.lineWidth);
     }
-
 }
 
 window.onload = () => {
